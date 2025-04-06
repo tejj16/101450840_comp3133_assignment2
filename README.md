@@ -29,8 +29,7 @@ This command will:
 
 
 ### test user id and password
-Email:qwe1@gmail.com
-PAssword:TejP123@qwe
+Email:qwe1@gmail.com  ||  Password:TejP123@qwe
 
 ### UI
 
