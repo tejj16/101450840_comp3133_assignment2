@@ -1,0 +1,115 @@
+/* Page Container */
+.container {
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 12px;
+  color: #fefefe;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(255, 255, 0, 0.15);
+  border: 2px solid #ffcc00;
+}
+
+/* Card Header */
+.card-header {
+  background: linear-gradient(to right, #ffcc00, #ffaa00);
+  color: #1a1a1a;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-header button {
+  background-color: #2a2a2a;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.card-header button:hover {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Body */
+.card-body {
+  padding: 20px;
+}
+
+/* Error Message */
+.alert-danger {
+  background-color: #5e0000;
+  color: #ff4d4d;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ff4d4d;
+}
+
+/* Loading Message */
+.loading {
+  font-size: 16px;
+  color: #ffcc00;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Employee Photo */
+.img-thumbnail {
+  border-radius: 10px;
+  border: 3px solid #ffcc00;
+  max-height: 150px;
+  transition: transform 0.3s ease;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Employee Info */
+.card-body p {
+  margin: 12px 0;
+  font-size: 15px;
+  background-color: #2a2a2a;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  color: #ffcc00;
+}
+
+/* Field Title */
+.card-body p strong {
+  background-color: #ffcc00;
+  color: #1a1a1a;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Highlighted values (e.g. salary, date) */
+.card-body p span {
+  font-weight: bold;
+  color: #28a745;
+}

@@ -1,0 +1,102 @@
+<app-navbar></app-navbar>
+
+<div class="container py-5">
+  <h3>Add New Employee</h3>
+  <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()" [class.was-validated]="submitted" novalidate>
+
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" formControlName="first_name" placeholder="Enter first name" />
+        <small class="text-danger" *ngIf="employeeForm.get('first_name')?.touched && employeeForm.get('first_name')?.invalid">
+          First name is required.
+        </small>
+      </div>
+
+      <div class="col-md-6 form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" formControlName="last_name" placeholder="Enter last name" />
+        <small class="text-danger" *ngIf="employeeForm.get('last_name')?.touched && employeeForm.get('last_name')?.invalid">
+          Last name is required.
+        </small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control" formControlName="email" placeholder="example@domain.com" />
+      <small class="text-danger" *ngIf="employeeForm.get('email')?.touched && employeeForm.get('email')?.hasError('required')">
+        Email is required.
+      </small>
+      <small class="text-danger" *ngIf="employeeForm.get('email')?.touched && employeeForm.get('email')?.hasError('email')">
+        Enter a valid email address.
+      </small>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label>Gender</label>
+        <select class="form-select" formControlName="gender">
+          <option value="">Select gender...</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <small class="text-danger" *ngIf="employeeForm.get('gender')?.touched && employeeForm.get('gender')?.invalid">
+          Gender is required.
+        </small>
+      </div>
+
+      <div class="col-md-6 form-group">
+        <label>Designation</label>
+        <input type="text" class="form-control" formControlName="designation" placeholder="e.g. Software Engineer" />
+        <small class="text-danger" *ngIf="employeeForm.get('designation')?.touched && employeeForm.get('designation')?.invalid">
+          Designation is required.
+        </small>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label>Department</label>
+        <input type="text" class="form-control" formControlName="department" placeholder="e.g. IT, HR, Finance" />
+        <small class="text-danger" *ngIf="employeeForm.get('department')?.touched && employeeForm.get('department')?.invalid">
+          Department is required.
+        </small>
+      </div>
+
+      <div class="col-md-6 form-group">
+        <label>Salary</label>
+        <input type="number" class="form-control" formControlName="salary" placeholder="Minimum 1000" />
+        <small class="text-danger" *ngIf="employeeForm.get('salary')?.touched && employeeForm.get('salary')?.hasError('required')">
+          Salary is required.
+        </small>
+        <small class="text-danger" *ngIf="employeeForm.get('salary')?.touched && employeeForm.get('salary')?.hasError('min')">
+          Minimum salary is 1000.
+        </small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Date of Joining</label>
+      <input type="date" class="form-control" formControlName="date_of_joining" />
+      <small class="text-danger" *ngIf="employeeForm.get('date_of_joining')?.touched && employeeForm.get('date_of_joining')?.invalid">
+        Date of joining is required.
+      </small>
+    </div>
+
+    <div class="form-group">
+      <label for="employee_photo" class="form-label">Employee Photo</label>
+      <input type="file" class="form-control" (change)="onFileChange($event)" />
+      <div *ngIf="photoPreview" class="mt-2">
+        <img [src]="photoPreview" alt="Employee Photo Preview" class="img-thumbnail" />
+      </div>
+    </div>
+
+    <div class="form-group d-flex justify-content-end mt-4">
+      <button class="btn btn-primary me-2" type="submit" [disabled]="employeeForm.invalid">Save</button>
+      <button class="btn btn-secondary" type="button" (click)="router.navigate(['/employees'])">Cancel</button>
+    </div>
+
+  </form>
+</div>

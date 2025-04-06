@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - '4000:4000'
+    environment:
+      - MONGO_URI=mongodb+srv://serenespirit9:101450840@101450840.5jttx.mongodb.net/?retryWrites=true&w=majority&appName=101450840
+      - GRAPHQL_ENDPOINT=/graphql
+      - JWT_SECRET=your-secret-key
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - '4200:80'
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+volumes:
+  mongo_data:
+
+networks:
+  app-network:
+    driver: bridge

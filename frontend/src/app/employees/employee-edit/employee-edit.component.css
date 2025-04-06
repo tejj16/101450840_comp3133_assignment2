@@ -1,0 +1,167 @@
+/* ============ GLOBAL BACKGROUND AND TEXT ============ */
+body, html {
+  background-color: #121212 !important;
+  color: #fefefe !important;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============ CONTAINER ============ */
+.container {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(255, 255, 0, 0.1);
+  max-width: 800px;
+  margin: 40px auto;
+  color: #fefefe !important;
+}
+
+/* ============ HEADER ============ */
+h3 {
+  background: linear-gradient(to right, #ffcc00, #ffaa00);
+  color: #1a1a1a;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(255, 204, 0, 0.3);
+}
+
+/* ============ LABELS ============ */
+label {
+  display: block;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* ============ FORM FIELDS ============ */
+.form-control,
+.form-select,
+input,
+select,
+textarea {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 2px solid #ffcc00 !important;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ffaa00 !important;
+  box-shadow: 0 0 6px rgba(255, 204, 0, 0.4);
+}
+
+/* ============ PLACEHOLDER ============ */
+::placeholder {
+  color: #bbbbbb !important;
+  opacity: 1 !important;
+}
+
+/* ============ SELECT DROPDOWN OPTIONS ============ */
+select.form-control option {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+/* ============ FORM GROUP WRAPPER ============ */
+.form-group,
+.mb-3 {
+  background-color: #1e1e1e !important;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  color: #fefefe;
+}
+
+/* ============ ERROR TEXT ============ */
+.text-danger {
+  font-size: 13px;
+  color: #ff4d4d !important;
+}
+
+small {
+  display: block;
+  margin-top: 5px;
+  color: #fefefe !important;
+}
+
+/* ============ FORM VALIDATION ============ */
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+  border-color: #dc3545 !important;
+}
+
+/* ============ IMAGE PREVIEW ============ */
+.img-thumbnail {
+  border-radius: 8px;
+  border: 3px solid #ffaa00;
+  margin-top: 10px;
+  max-height: 150px;
+  transition: transform 0.3s ease;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.preview-label {
+  font-weight: bold;
+  color: #ffcc00;
+  margin-top: 10px;
+}
+
+/* ============ BUTTONS ============ */
+button.btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #ffcc00;
+  color: #1a1a1a;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ffaa00;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #2a2a2a;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+}
+
+.btn-secondary:hover {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #666;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ============ PHOTO URL FIELD SPECIFIC ============ */
+input[formControlName="employee_photo"] {
+  border: 2px solid #ffcc00 !important;
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}

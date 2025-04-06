@@ -1,0 +1,193 @@
+/* ===== Global Dark Background ===== */
+body {
+  background-color: #121212;
+  color: #fefefe;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+/* ===== Page Container ===== */
+.container {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(255, 255, 0, 0.15);
+  color: #fefefe;
+}
+
+/* ===== Page Title ===== */
+h3 {
+  background: linear-gradient(to right, #ffcc00, #ffaa00);
+  color: #1a1a1a;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(255, 204, 0, 0.5);
+}
+
+/* ===== Form Labels ===== */
+label {
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* ===== Form Controls ===== */
+.form-control,
+.form-select {
+  background-color: #2a2a2a;
+  color: #fefefe;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.form-control:hover,
+.form-control:focus,
+.form-select:hover,
+.form-select:focus {
+  border-color: #ffaa00;
+  box-shadow: 0 0 6px rgba(255, 204, 0, 0.5);
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+/* ===== File Input Styling ===== */
+input[type="file"] {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 2px dashed #ffcc00;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background: #ffaa00;
+}
+
+/* ===== Photo Preview Styling ===== */
+.img-thumbnail {
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 3px solid #ffaa00;
+  max-width: 100px;
+  max-height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Validation Text ===== */
+.text-danger {
+  font-size: 13px;
+  color: #ff4d4d;
+}
+
+small {
+  font-size: 13px;
+}
+
+/* ===== Validation States ===== */
+.was-validated .form-control:valid {
+  border-color: #28a745;
+}
+
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid + .text-danger {
+  display: none;
+}
+
+.was-validated .form-control:invalid + .text-danger {
+  display: block;
+}
+
+/* ===== Buttons ===== */
+button {
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #ffcc00;
+  color: #1a1a1a;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ffaa00;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #2a2a2a;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+}
+
+.btn-secondary:hover {
+  background-color: #3a3a3a;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+button + button {
+  margin-left: 12px;
+}
+
+/* ===== Placeholder Text Fix ===== */
+::placeholder {
+  color: #999 !important;
+  opacity: 1;
+}
+
+/* ===== Select Option Styling ===== */
+select {
+  color: #fefefe;
+  background-color: #2a2a2a;
+}
+
+select option {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+/* ===== Scrollbar Styling ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffcc00;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2a2a2a;
+}

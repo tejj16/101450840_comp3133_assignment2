@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-5 d-flex justify-content-center align-items-center">
+  <div class="card custom-card w-100" style="max-width: 600px;">
+    <div class="card-header custom-header d-flex justify-content-between align-items-center">
+      <h3 class="mb-0">Employee Details</h3>
+      <button class="btn btn-secondary btn-sm" (click)="goBack()">Go Back</button>
+    </div>
+
+    <div class="card-body custom-body">
+      <div *ngIf="error" class="alert alert-danger text-center">{{ error }}</div>
+      <div *ngIf="loading" class="text-center text-warning">Loading employee details...</div>
+
+      <div *ngIf="employee">
+        <div class="text-center mb-4" *ngIf="employee.employee_photo">
+          <img [src]="employee.employee_photo" class="img-thumbnail rounded shadow" style="max-height: 150px;" alt="Employee Photo" />
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item custom-item"><strong>First Name:</strong> {{ employee.first_name }}</li>
+          <li class="list-group-item custom-item"><strong>Last Name:</strong> {{ employee.last_name }}</li>
+          <li class="list-group-item custom-item"><strong>Email:</strong> {{ employee.email }}</li>
+          <li class="list-group-item custom-item"><strong>Designation:</strong> {{ employee.designation }}</li>
+          <li class="list-group-item custom-item"><strong>Salary:</strong> ${{ employee.salary | number }}</li>
+          <li class="list-group-item custom-item"><strong>Date of Joining:</strong> {{ formatDate(employee.date_of_joining) }}</li>
+          <li class="list-group-item custom-item"><strong>Department:</strong> {{ employee.department }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

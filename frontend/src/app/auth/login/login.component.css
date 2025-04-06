@@ -1,0 +1,94 @@
+/* === Page Container === */
+.container {
+  background-color: #121212;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fefefe;
+}
+
+/* === Card Styling === */
+.card.login-card {
+  background-color: #1a1a1a;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #ffcc00;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.2);
+}
+
+/* === Header === */
+.card h3 {
+  color: #ffcc00;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(255, 204, 0, 0.5);
+}
+
+/* === Form Inputs === */
+.form-control {
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #ffcc00;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+}
+
+.form-control:focus {
+  border-color: #ffaa00;
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.4);
+  outline: none;
+}
+
+/* === Labels === */
+.form-label {
+  color: #ffcc00;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* === Button === */
+.btn-yellow {
+  background-color: #ffcc00;
+  color: #121212;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #ffaa00;
+  transform: scale(1.03);
+  color: #000;
+}
+
+/* === Error Message === */
+.text-danger small {
+  font-size: 0.875rem;
+}
+
+/* === Signup Link === */
+.text-center a {
+  color: #ffcc00;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 576px) {
+  .card {
+    padding: 2rem 1.2rem;
+  }
+}
