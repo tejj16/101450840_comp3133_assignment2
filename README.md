@@ -36,7 +36,6 @@ This command will:
 <img width="1512" alt="ViewEmployee" src="https://github.com/user-attachments/assets/74b0c9f1-9da5-4b01-802b-e5cd1689719c" />
 <img width="757" alt="EditEmployee" src="https://github.com/user-attachments/assets/968604e5-e4d3-47c0-81f5-9670fb720c0d" />
 <img width="1512" alt="DeleteEmployee-deleted" src="https://github.com/user-attachments/assets/677680e6-5208-4e5d-84f4-86c0a0900cdd" />
-<img width="1512" alt="SignupPage" src="https://github.com/user-attachments/assets/63888761-3d7c-4bcb-8a5e-e52dccc418b8" />
 <img width="1504" alt="SearchbyName" src="https://github.com/user-attachments/assets/4b267c2b-b905-432e-8ca9-94c3e2daaad0" />
 <img width="1508" alt="SearchbyEmail" src="https://github.com/user-attachments/assets/bad4ec69-f482-4f44-b799-15e7b70025e1" />
 <img width="753" alt="SearchbyDepartment" src="https://github.com/user-attachments/assets/f95f2df6-bba5-408b-8517-4c96adde0bc6" />
