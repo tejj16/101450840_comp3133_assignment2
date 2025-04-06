@@ -27,6 +27,11 @@ This command will:
 
 > Make sure Docker is installed and running on your system.
 
+
+### test user id and password
+Email:qwe1@gmail.com
+PAssword:TejP123@qwe
+
 ### UI
 
 <img width="1512" alt="SignupPage" src="https://github.com/user-attachments/assets/8c5b115d-1709-492c-9b5b-e369bbbc51da" />
